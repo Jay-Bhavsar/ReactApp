@@ -1,24 +1,66 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import About from './components/About';
+import Alert from './components/alert';
+
+
+import Navbar from './components/Navbar';
+import Text from './components/Text';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { ACD } from './components/ACD';
+import { B } from './components/B';
+import {form} from './components/form'
+import Login from './components/Login';
+
+
+
 
 function App() {
+  // const [alert, setalert] = useState(null)
+  // const showalert = (message, type) => {
+  //   setalert({
+  //     msg: message,
+  //     type: type,
+  //   })
+
+  // }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      {/* <Navbar title="My Company" Abouttext="About" /> */}
+      {/* <Alert alert={alert} /> */}
+      
+
+
+        <Router>
+          <Switch>
+            <Route path="/admin">
+              <ACD />
+            </Route>
+            <Route path="/logout">
+              <B />
+            </Route>
+            <Route path="/form">
+              <Login/>
+                          </Route>
+          </Switch>
+        </Router>
+        {/* <Text /> */}
+
+        {/* <Text heading="Enter text to convert it into Uppercase letters"/> */}
+
+      
+
+    </>
   );
 }
 

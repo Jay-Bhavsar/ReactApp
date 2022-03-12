@@ -1,0 +1,38 @@
+.container{
+    background-color:transparent;
+    
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    width: 30%;
+    margin-top: auto;
+    font-weight: bold;
+    font-size: 25px;
+    border: 10px solid rgb(255, 255, 255);
+}
+.h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+.button{
+   margin: 30px;
+}
+body{
+    /* background-color: rgb(194, 201, 206); */
+    font-family: 'Sansita Swashed', cursive;
+    background: linear-gradient(107.01deg, #FF3366 0.53%, #6699FF 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  
+    
+    
+}
+.bg{
+    top: 0;
+    bottom: 0;
+    opacity: 0.6;
+}
+html{
+    height: 100%;
+}
